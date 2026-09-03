@@ -26,6 +26,13 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        dialog {
+            width: 70%;
+            height: 200px;
+            background-color: green;
+            border: 2px solid #eee;
+            background: linear-gradient(to right, rgb(12, 224, 125), skyblue);
+        }
     </style>
 </head>
 <body>
@@ -303,7 +310,50 @@
         </tbody>
     </table>
 
+    <!---Details-->
+    <hr>
+    <details>
+        <summary>HTML Usage</summary>
+        HTML is for web development only
+    </details>
 
+    <!--Dialog-->
+    <hr>
+    <dialog id="myDialog">
+        <p>Test a dialog tag</p>
+        <button type="button" onclick="myDialog.close()">Close Dialog</button>
+
+    </dialog>
+
+    <button type="button" onclick="myDialog.showModal()">Open Dialog</button>
+
+    <!---noscript-->
+    <hr>
+    <noscript>
+        <h6>Please allow Javascript--</h6>
+    </noscript>
+
+    <!---template-->
+    <hr>
+    <template id="temp">
+        <div>
+            <h1>HTML</h1>
+            <p>Hyper Text Mark Language</p>
+        </div>
+    </template>
 
 </body>
+
+    <!--Adds Javascript-->
+    <script src="./assets/js/animations.js"></script>
+    <script>
+        const myTemplate = document.getElementById("temp");
+        console.log(myTemplate);
+
+        for(let i = 1; i<=10; i++){
+            const clone = myTemplate.content.cloneNode(true);
+            document.body.appendChild(clone);
+        }
+    </script>
+
 </html>
