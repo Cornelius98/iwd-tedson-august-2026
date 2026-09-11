@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .parent {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 1%;
+        }
+
+        .box-1 {
+            background-color: red;
+        }
+        .box-2 {
+            background-color: rgb(255, 154, 3);
+        }
+        .box-3 {
+            background-color: rgb(30, 255, 0);
+        }
+    </style>
+</head>
+    <div class="parent">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+</body>
+</html>

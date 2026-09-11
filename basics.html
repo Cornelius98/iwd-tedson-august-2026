@@ -5,33 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Fundamentals</title>
     <style>
-        #p1 {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .p1 {
             /*color: red;
             color: #FF4538;
             color: rgb(255 69 56);
             */
             color: hsl(0, 0%, 100%);
-            background-color: black;
+            /*background-color: black;*/
             padding: 5%;
+
+            /*Gradient*/
+            /*background:linear-gradient(to right, green, rgb(60, 60, 141));*/
+            background: radial-gradient(circle, rgb(0, 255, 98), rgb(25, 0, 255));
+
+
+            /*Font (texT) - family */
+            font-family: tahoma;
+            font-size: 30px;
+            font-weight: 800;
+            text-align: left;
+        }
+        .text-align {
+            max-width: 25%;
+            
+        }
+        .p2 {
+            text-align: left;
+            font-weight: none;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            padding: 3%;
         }
     </style>
 </head>
 <body>
     <p id="p1" class="p1">
-        Lorem Ipsum is simply dummy text of the printing 
-        and typesetting industry. Lorem Ipsum has been the 
-        industry's standard dummy text ever since 1966, 
-        when designers at Letraset and James Mosley, 
-        the librarian at St Bride Printing Library in 
-        London, took a 1914 Cicero translation and 
-        scrambled it to make dummy text for Letraset's 
-        Body Type sheets. It has survived not only many 
-        decades, but also the leap into electronic 
-        typesetting, remaining essentially unchanged. 
-        It was popularised thanks to these sheets and 
-        more recently with desktop publishing software 
-        like Aldus PageMaker and Microsoft Word including 
-        versions of Lorem Ipsum.
+        <span class="text-align">
+            Lorem Ipsum is simply dummy text of the printing 
+            and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since 1966, 
+            when designers at Letraset and James Mosley, 
+            the librarian at St Bride Printing Library in 
+            London, took a 1914 Cicero translation and 
+            scrambled it to make dummy text for Letraset's 
+            Body Type sheets. It has survived not only many 
+            decades, but also the leap into electronic 
+            typesetting, remaining essentially unchanged. 
+            It was popularised thanks to these sheets and 
+            more recently with desktop publishing software 
+            like Aldus PageMaker and Microsoft Word including 
+            versions of Lorem Ipsum.
+        </span>
+    </p>
+    <p id="p1" class="p2">
+        <span class="text-align">
+            Lorem Ipsum is simply dummy text of the printing 
+            and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since 1966, 
+            when designers at Letraset and James Mosley, 
+            the librarian at St Bride Printing Library in 
+            London, took a 1914 Cicero translation and 
+            scrambled it to make dummy text for Letraset's 
+            Body Type sheets. It has survived not only many 
+            decades, but also the leap into electronic 
+            typesetting, remaining essentially unchanged. 
+            It was popularised thanks to these sheets and 
+            more recently with desktop publishing software 
+            like Aldus PageMaker and Microsoft Word including 
+            versions of Lorem Ipsum.
+        </span>
     </p>
 </body>
 </html>
