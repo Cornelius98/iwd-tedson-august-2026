@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .services {
+            background: linear-gradient(to right, lightgreen, skyblue);
+            padding-top: 10%;
+            padding-bottom: 15%;
+            position: relative;
+        }
+        .heading {
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .heading > h2 {
+            font-size: 50px;
+        }
+         .heading > p {
+            margin-bottom: 5%;
+         }
+        .content-box {
+            width: 20%;
+            margin: 1%;
+        }
+
+        .content-box > img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+        .images-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .show-casing {
+            background:none;
+            background-color: #eee;
+        }
+        .relative-box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            top: 50%;
+            right: -50%;
+        }
+        .absolute-box {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 208, 0);
+            position: absolute;
+            top: 50%;
+            right: 5%;
+        }
+        .fixed-box {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 26, 255);
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            border-radius: 120px;
+        }
+        .sticky-box {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 255, 64);
+            position: sticky;
+            top: 20%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!--Static flow-->
+        <section class="services">
+             <div class="absolute-box"></div>
+            <!--Headings-->
+            <div class="heading">
+                <h2>OUR SERVICES</h2>
+                <p>
+                    Lorem Ipsum is dummy text commonly used in graphic design, publishing, 
+                    and web development to fill spaces where content will eventually appear, 
+                    allowing designers to focus on layout and visual presentation
+                </p>
+            </div>
+
+            <!--Image and text-->
+            <div class="images-text">
+
+                <!--Image and text 1-->
+                <div class="content-box">
+                    <img src="./assets/2.jpeg" alt="image">
+                    <p>
+                        Lorem Ipsum is dummy text commonly used in graphic design, 
+                        publishing, and web development to fill spaces where content 
+                        will eventually appear, allowing designers to focus on layout 
+                        and visual presentation
+
+                    </p>
+                </div>
+
+                 <!--Image and text 2-->
+                <div class="content-box">
+                    <img src="./assets/2.jpeg" alt="image">
+                    <p>
+                        Lorem Ipsum is dummy text commonly used in graphic design, 
+                        publishing, and web development to fill spaces where content 
+                        will eventually appear, allowing designers to focus on layout 
+                        and visual presentation
+
+                    </p>
+                </div>
+
+                 <!--Image and text 3-->
+                <div class="content-box">
+                    <img src="./assets/2.jpeg" alt="image">
+                    <p>
+                        Lorem Ipsum is dummy text commonly used in graphic design, 
+                        publishing, and web development to fill spaces where content 
+                        will eventually appear, allowing designers to focus on layout 
+                        and visual presentation
+
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <div class="relative-box"></div>
+                <div class="sticky-box"></div>
+
+         <section class="services show-casing">
+            <!--Headings-->
+            <div class="heading">
+                <h2>SHOW CASING</h2>
+                <p>
+                    Lorem Ipsum is dummy text commonly used in graphic design, publishing, 
+                    and web development to fill spaces where content will eventually appear, 
+                    allowing designers to focus on layout and visual presentation
+                </p>
+            </div>
+
+            <!--Image and text-->
+            <div class="images-text">
+
+                <!--Image and text 1-->
+                <div class="content-box">
+                    <img src="./assets/2.jpeg" alt="image">
+                    <p>
+                        Lorem Ipsum is dummy text commonly used in graphic design, 
+                        publishing, and web development to fill spaces where content 
+                        will eventually appear, allowing designers to focus on layout 
+                        and visual presentation
+
+                    </p>
+                </div>
+
+                 <!--Image and text 2-->
+                <div class="content-box">
+                    <img src="./assets/2.jpeg" alt="image">
+                    <p>
+                        Lorem Ipsum is dummy text commonly used in graphic design, 
+                        publishing, and web development to fill spaces where content 
+                        will eventually appear, allowing designers to focus on layout 
+                        and visual presentation
+
+                    </p>
+                </div>
+
+                 <!--Image and text 3-->
+                <div class="content-box">
+                    <img src="./assets/2.jpeg" alt="image">
+                    <p>
+                        Lorem Ipsum is dummy text commonly used in graphic design, 
+                        publishing, and web development to fill spaces where content 
+                        will eventually appear, allowing designers to focus on layout 
+                        and visual presentation
+
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <div class="fixed-box"></div>
+    </main>
+</body>
+</html>
